@@ -1,0 +1,16 @@
+:root { --board:#0F3B2E; --paper:#E9E0C8; --card:#F5EEDB; --ink:#17201C; --dim:#5C685F; --bulb:#F7B731; --line:#D2C39C; }
+@media (prefers-color-scheme: dark) { :root { --paper:#071C16; --card:#0F2F25; --ink:#F3EEDF; --dim:#9DB5A8; --line:#1F4A3C; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 "Barlow", system-ui, -apple-system, sans-serif; }
+header { background: var(--board); color: #F3EEDF; padding: 28px 16px; text-align: center; }
+header img { width: 64px; height: 64px; }
+header h1 { font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400; letter-spacing: 1px; font-size: 44px; margin: 6px 0 0; }
+header p { margin: 4px 0 0; color: #9DB5A8; text-transform: uppercase; letter-spacing: 2px; font-size: 13px; font-weight: 700; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h2 { font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400; font-size: 30px; letter-spacing: .5px; margin: 32px 0 8px; border-bottom: 2px solid var(--line); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 12px 0; }
+a { color: inherit; }
+.small { color: var(--dim); font-size: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+td, th { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+footer { text-align: center; color: var(--dim); font-size: 13px; padding: 24px 16px; }
