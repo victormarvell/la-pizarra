@@ -15,12 +15,12 @@
   <p>Política de privacidad</p>
 </header>
 <main>
-  <p class="small">Vigente desde el 6 de octubre de 2026.</p>
+  <p class="small">Vigente desde el 12 de noviembre de 2026.</p>
 
-  <p><strong>La Pizarra</strong> es una app gratuita e independiente para seguir la pelota invernal dominicana. Esta política explica qué información usa la app y cómo. La versión corta: <strong>no recopilamos datos personales</strong>. No hay cuentas, anuncios, analítica ni rastreo.</p>
+  <p><strong>La Pizarra</strong> es una app gratuita e independiente para seguir la pelota invernal dominicana. Esta política explica qué información usa la app y cómo. La versión corta: <strong>no recopilamos datos personales</strong> como tu nombre, correo, teléfono o ubicación. No hay cuentas, anuncios, analítica ni rastreo. Lo único que sale de tu teléfono es un identificador anónimo de notificaciones, y solo si activas las alertas en vivo de un juego.</p>
 
-  <h2>Qué datos se guardan y dónde</h2>
-  <p>Todo lo siguiente se guarda <strong>solo en tu teléfono</strong>. No lo enviamos a ningún servidor nuestro y nosotros no tenemos acceso:</p>
+  <h2>Qué datos se guardan en tu teléfono</h2>
+  <p>Todo lo siguiente se guarda <strong>solo en tu teléfono</strong>. No lo enviamos a ningún servidor y nosotros no tenemos acceso:</p>
   <div class="card">
     <ul>
       <li><strong>Tus preferencias:</strong> equipos que sigues, con cuánta anticipación quieres los recordatorios y si prefieres la hora local o la de RD.</li>
@@ -30,10 +30,23 @@
   </div>
   <p>Al desinstalar la app se borra todo. También puedes eliminar cada boleta desde la app.</p>
 
+  <h2>Alertas en vivo: qué datos enviamos a nuestro servidor</h2>
+  <p>Si activas las alertas en vivo de un juego (inicio, carreras, final) o, en iPhone, una Actividad en Vivo, la app envía a nuestro servidor:</p>
+  <div class="card">
+    <ul>
+      <li><strong>Un token de notificaciones</strong>: un identificador anónimo que generan Apple, Google o Expo para que tu teléfono pueda recibir avisos. No incluye tu nombre, número ni correo.</li>
+      <li><strong>El juego que sigues</strong> y el tipo de sistema (iOS o Android).</li>
+    </ul>
+  </div>
+  <p><strong>Para qué:</strong> solo para enviarte los avisos y actualizar el marcador de ese juego. No lo usamos para publicidad, perfiles ni ningún otro fin, y no lo vendemos ni compartimos con nadie más.</p>
+  <p><strong>Dónde:</strong> en una base de datos de nuestro servidor alojado en Cloudflare (Cloudflare Workers y D1). Los datos viajan cifrados (HTTPS).</p>
+  <p><strong>Cuánto tiempo:</strong> se borran automáticamente cuando termina el juego, o antes si desactivas las alertas o la Actividad en Vivo. Si el sistema nos informa que el token ya no es válido, también se borra.</p>
+  <p>Para entregar los avisos, el token y el contenido del aviso (por ejemplo, el marcador) pasan por <strong>Expo Push Service</strong> (Expo / 650 Industries), <strong>Apple Push Notification service</strong> y <strong>Firebase Cloud Messaging</strong> de Google, según tu teléfono.</p>
+
   <h2>Permisos que pide la app</h2>
   <table>
     <tr><th>Permiso</th><th>Para qué</th><th>¿Cuándo?</th></tr>
-    <tr><td>Notificaciones</td><td>Avisarte antes de los juegos de los equipos que sigues.</td><td>Solo si sigues un equipo.</td></tr>
+    <tr><td>Notificaciones</td><td>Avisarte antes de los juegos de los equipos que sigues y enviarte alertas en vivo.</td><td>Solo si sigues un equipo o activas alertas.</td></tr>
     <tr><td>Cámara</td><td>Tomar la foto de tu boleta.</td><td>Solo al tocar “Tomar foto”.</td></tr>
     <tr><td>Fotos</td><td>Elegir una foto (con el selector del sistema) y guardar tu boleta en la galería.</td><td>Solo al elegir o guardar una foto.</td></tr>
     <tr><td>Calendario</td><td>Agregar juegos a tu calendario.</td><td>Solo al tocar “Agregar al calendario”.</td></tr>
@@ -41,17 +54,20 @@
   <p>La app <strong>no usa tu ubicación</strong> ni tu micrófono, no lee las fotos de tu galería y no lee tus eventos del calendario (en Android solo consulta la lista de calendarios para saber dónde guardar el juego).</p>
 
   <h2>Servicios de terceros</h2>
-  <p>Para mostrar los datos, tu teléfono se conecta directamente a estos servicios. Como cualquier sitio web, ellos reciben datos técnicos de la conexión, como tu <strong>dirección IP</strong>, según sus propias políticas. La app no les envía ninguna información personal.</p>
+  <p>Para mostrar los datos, tu teléfono se conecta directamente a estos servicios. Como cualquier sitio web, ellos reciben datos técnicos de la conexión, como tu <strong>dirección IP</strong>, según sus propias políticas. La app no les envía información personal; a los servicios de notificaciones solo llega el token anónimo descrito arriba.</p>
   <div class="card">
     <ul>
       <li><strong>MLB Stats API</strong> (MLB Advanced Media, L.P.): juegos, estadísticas y jugadas. <a href="https://www.mlb.com/official-information/privacy-policy">Política de privacidad de MLB</a>.</li>
       <li><strong>Open-Meteo</strong>: pronóstico del tiempo en los estadios. <a href="https://open-meteo.com/en/terms">Términos de Open-Meteo</a>.</li>
+      <li><strong>Cloudflare</strong>: aloja nuestro servidor de alertas. <a href="https://www.cloudflare.com/privacypolicy/">Política de privacidad de Cloudflare</a>.</li>
+      <li><strong>Expo</strong>: entrega de notificaciones. <a href="https://expo.dev/privacy">Política de privacidad de Expo</a>.</li>
+      <li><strong>Apple</strong> y <strong>Google</strong>: servicios de notificaciones del sistema. <a href="https://www.apple.com/legal/privacy/">Apple</a> · <a href="https://policies.google.com/privacy">Google</a>.</li>
     </ul>
   </div>
   <p>Cuando compartes una boleta, la imagen se envía a la app que elijas (por ejemplo WhatsApp o Instagram), según las políticas de esa app.</p>
 
   <h2>Menores de edad</h2>
-  <p>La app es apta para todo público y no recopila datos de nadie, incluidos menores de edad.</p>
+  <p>La app es apta para todo público y no recopila datos personales de nadie, incluidos menores de edad.</p>
 
   <h2>App no oficial</h2>
   <p>La Pizarra no está afiliada, patrocinada ni aprobada por la LIDOM, MLB, MLB Advanced Media ni los equipos.</p>
